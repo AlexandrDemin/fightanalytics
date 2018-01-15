@@ -19,22 +19,22 @@
         <div>
           <label for="place">Место проведения</label>
           <input type="text" name="place" v-model="place" v-on:blur="validatePlace">
-          <p class="error" v-if="!countryValid">Необходимо указать место</p>
+          <p class="error" v-if="!placeValid">Необходимо указать место</p>
         </div>
         <div>
           <label for="fighters">Участники</label>
           <input type="text" name="fighters" v-model="fightersStr" v-on:blur="validateFighters">
-          <p class="error" v-if="!birthYearValid">Необходимо указать id участников через запятую</p>
+          <p class="error" v-if="!fightersValid">Необходимо указать id участников через запятую</p>
         </div>
         <div>
           <label for="result">Результат боя</label>
-          <input type="text" name="result" v-model="result" v-on:blur="validateWinnerId">
-          <p class="error" v-if="!birthYearValid">Необходимо указать результат боя.</p>
+          <input type="text" name="result" v-model="result" v-on:blur="validateResult">
+          <p class="error" v-if="!resultValid">Необходимо указать результат боя.</p>
         </div>
         <div v-if="result!=4">
           <label for="winner_id">Победитель</label>
           <input type="text" name="winner_id" v-model="winner_id" v-on:blur="validateWinnerId">
-          <p class="error" v-if="!birthYearValid">Необходимо указать id победителя. Победитель должен быть среди участников боя.</p>
+          <p class="error" v-if="!winnerIdValid">Необходимо указать id победителя. Победитель должен быть среди участников боя.</p>
         </div>
         <button type="button" @click="save" ref="saveButton">Сохранить</button>
       </form>
