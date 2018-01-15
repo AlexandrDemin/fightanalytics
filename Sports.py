@@ -3,5 +3,5 @@
 from enum import Enum
 class Sports(Enum):
     """Sports enum"""
-    BOXING = 1
+    BOX = 1
     MMA = 2

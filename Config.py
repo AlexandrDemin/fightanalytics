@@ -8,4 +8,4 @@ class DevelopmentConfig(object):
     DEBUG = True
     TESTING = True
     SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:grillo@localhost/fightanalytics'
-    SQLALCHEMY_TRACK_MODIFICATIONS = False    
+    SQLALCHEMY_TRACK_MODIFICATIONS = False

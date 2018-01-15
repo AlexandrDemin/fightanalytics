@@ -1,0 +1,19 @@
+Components
+    Main nav
+    Loader
+    View fighters
+    Create / view / edit fighter
+    View fights
+    Create / view / edit fight
+    View recorded fight
+        Raw log
+        Graphs
+    Record fight
+        Maneuver
+        Defence
+        Attack
+        Trick
+        Forbidden
+        Missed
+        Log
+        Time

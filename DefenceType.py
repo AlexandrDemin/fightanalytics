@@ -19,3 +19,4 @@ class DefenceType(Enum):
     RIGHTBEATOFF = 14
     MOVEBACK = 15
     MOVESIDE = 16
+    TILT = 17
